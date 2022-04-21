@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Chaos Townhall</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/px.css">
+    <!-- PX -->
+    <script src="px.js" defer></script>
 </head>
 
 <body>
@@ -14,29 +17,35 @@
     <h1 class="thread-title">threadroom</h1>
     <h1 class="px-title">px map</h1>
     <main>
-        <div class="box-wrapper">
-            <div class="boxes">
-                <h3>thread</h3>
-                <p>In the threadroom you can create posts for other people to respond to!</p>
+        <section class="home">
+            <div class="box-wrapper">
+                <div class="boxes">
+                    <h3>thread</h3>
+                    <p>In the threadroom you can create posts for other people to respond to!</p>
+                </div>
+                <div class="boxes">
+                    <h3>px map</h3>
+                    <p>In the px map you can place pixels with a variety of different colors. Work with other users
+                        to make some beautiful art!</p>
+                </div>
             </div>
-            <div class="boxes">
-                <h3>px map</h3>
-                <p>In the px map you can place pixels with a variety of different colors. Work with other users
-                    to make some beautiful art!</p>
+        </section>
+        <section class="thread-page">
+
+        </section>
+        <section class="px-page">
+            <div class="navbar">
+                <button class="btn">Reset</button>
+                <input type="color" value="#00eeff" class="color">
+                <input type="number" value="30" class="size">
             </div>
-        </div>
+            <div class="container">
+            </div>
+        </section>
     </main>
-    <section class="thread-page">
-
-    </section>
-    <section class="px-page">
-
-    </section>
     <footer>
         <p>&copy; 2022 Maceo Beltman & Matthew de Haan. All rights reserved.</p>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="script/script.js"></script>
 </body>
 
 </html>
