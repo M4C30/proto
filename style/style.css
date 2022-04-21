@@ -1,0 +1,139 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+
+/* Header */
+body{
+    height: 100vh;
+    width: 100%;
+    background-color:#E9E5CB;
+    overflow: hidden;
+    font-family: sans-serif;
+    /* color:  */
+}
+header{
+    font-family: "VT323", "monospace";
+    display: flex;
+    justify-content: center;   
+    
+}
+nav{
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    font-size: xx-large;
+}
+
+header a{
+    text-decoration: none;
+    color: #F6E7D8;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.activeHeader{
+    text-decoration: underline;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+h1{
+    padding-top: 8rem;
+    font-size: 40px;
+    font-family: 'Noto Sans Mono', monospace;
+    color: #91946F; 
+    user-select: none;
+    width: fit-content;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.thread-title {
+    display: none;
+}
+
+.px-title {
+    display: none;
+}
+
+.box-wrapper {
+    display: flex;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40vh;
+    max-width: max-content;
+    cursor: pointer;
+    background-color:hsl(65, 15%, 51%);
+    border-radius: 2px;
+    margin-inline: 1rem;
+    line-height: 1.2;
+    border-radius: 25px;
+}
+
+.boxes:nth-child(1) {
+    box-shadow: 0px 10px #bec826;
+} 
+
+.boxes:nth-child(2) {
+    box-shadow: 0px 10px #c87426;
+    /* #67694d */
+} 
+
+.boxes:active{
+    box-shadow: none;
+    position: relative;
+    top: 10px;
+}
+
+.boxes:hover {
+    background-color:hsl(65, 15%, 46%);
+}
+
+.boxes p{
+    font-family: "VT323", "monospace";
+    font-size: large;
+    color: #e4dfbc;
+    user-select: none;
+    text-align: center;
+    max-width: 45ch;
+    padding: 1rem;
+}
+.boxes h3 {
+    text-transform: uppercase;
+    font-family: "VT323", "monospace";
+    border: 2px solid black;
+    border-radius: 5px 10px;
+    background-color:hsla(52, 40%, 85%, 0.9);
+    color: #91946F; 
+    padding: 1rem .5125rem;
+    user-select: none;
+    font-size: xx-large;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    min-width: 100%;
+}
+
+footer p {
+    width: fit-content;
+    margin-inline: auto;
+    user-select: none;
+    font-size: 14px;
+}
+
+main {
+    width: fit-content;
+    margin-inline: auto;
+    padding-top: 5rem;
+}
