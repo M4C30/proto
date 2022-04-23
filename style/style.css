@@ -22,7 +22,7 @@ header{
     
 }
 nav{
-    padding-top: 4rem;
+    padding-top: 3rem;
     display: flex;
     flex-direction: row;
     gap: 3rem;
@@ -47,7 +47,7 @@ section{
     align-items: center;
 }
 h1{
-    padding-top: 8rem;
+    padding-top: 3rem;
     font-size: 40px;
     font-family: 'Noto Sans Mono', monospace;
     color: #91946F; 
@@ -55,14 +55,6 @@ h1{
     width: fit-content;
     margin-inline: auto;
     text-align: center;
-}
-
-.thread-title {
-    display: none;
-}
-
-.px-title {
-    display: none;
 }
 
 .box-wrapper {
