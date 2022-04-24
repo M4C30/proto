@@ -15,5 +15,5 @@ if (isset($_POST['save'])) {
     $mysqli->query("INSERT INTO thread (naampje, onderwerp, bestand, onmymind) VALUES ('$naampje', '$onderwerp', '$bestand', '$onmymind')") or
     die($mysqli->error);
     
-    
+    header("location: ../thread.php");
 }
