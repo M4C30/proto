@@ -8,16 +8,12 @@ if (isset($_POST['save'])) {
     $bestand = $_POST['file'];
     $onmymind = $_POST['onmymind'];
 
+    
+
+    
+
     $mysqli->query("INSERT INTO thread (naampje, onderwerp, bestand, onmymind) VALUES ('$naampje', '$onderwerp', '$bestand', '$onmymind')") or
-        die($mysqli->error);
-
-    // // Unique name
-    // $file = rand(1000,100000)."-".$_FILES['file']['name'];
-
-    // // Temporary files
-    // $file_loc = $_FILES['file']['tmp_name'];
+    die($mysqli->error);
     
     
 }
-
-?>
