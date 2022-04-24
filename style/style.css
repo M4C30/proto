@@ -123,6 +123,7 @@ footer {
     position: fixed;
     bottom: 0;
     min-width: 100%;
+    background-color:#E9E5CB;
 }
 
 footer p {
