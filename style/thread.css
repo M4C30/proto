@@ -39,7 +39,6 @@ input[type=submit]{
 }
 #chat{
     width: 100%;
-    background-color: red;
     height: 85%;
     overflow: auto;
     padding-top: 5%;
@@ -51,17 +50,19 @@ input[type=submit]{
 
 /* Threads */
 .threadPost{
+    background-color: hsl(66, 13%, 70%);
     display: flex;
     flex-direction: row;
-    height: fit-content;
+    height: 20%;
     width: 80%;
-    align-items: center;
+    justify-content: center;
+    padding-top: 0.1%;
     margin-inline: auto;
     border: 2px solid hsl(65, 15%, 46%);
 }
 .textDiv{
     width: 100%;
-    height: 80%;
+    height: 60%;
     display: flex;
     flex-direction: column;
     gap: 15%;
@@ -74,14 +75,15 @@ h3{
     padding: 0;
     margin: 0;
     height: 80%;
+    min-height: 80%;
     overflow: auto;
 }
 .imgDiv{
     width: 100%;
 }
 .imgDiv img{
-    width: 70%;
-    height: auto;
+    width: auto;
+    height: 100%;
     padding-left: 5%;
 }
 .textTitle p{

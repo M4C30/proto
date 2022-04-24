@@ -27,7 +27,7 @@
         <form action="process/threadpro.php" id="inputFieldDiv" method="POST">
             <input type="text" name="naampje" id="nameInput" placeholder="Your name...">
             <input type="text" name="onderwerp" id="subjectInput" placeholder="Subject...">
-            <input type="file" accept="image/*" name="file" id="">
+            <input type="text" name="file" id="" placeholder="Image Link...">
             <textarea type="text" name="onmymind" id="mindInput" placeholder="What's on your mind?"></textarea>
             <button type="submit" id="uploadThread" name="save">Upload</button>
         </form>
