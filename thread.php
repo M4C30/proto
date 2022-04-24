@@ -13,7 +13,10 @@
 
 <body>
     <?php
-    require_once 'database.php';
+    require_once 'process/threadpro.php';
+
+    $mysqli = new mysqli("localhost", "db86699", "plesk02M@ceo!", "oct-o") or die(mysqli_error($mysqli));
+    $result = $mysqli->query("SELECT * FROM thread") or die($mysqli->error);
     ?>
 
 
@@ -21,15 +24,32 @@
 
     <div id="container">
 
-        <form action="threadpro.php" id="inputFieldDiv" method="POST">
+        <form action="process/threadpro.php" id="inputFieldDiv" method="POST">
             <input type="text" name="naampje" id="nameInput" placeholder="Your name...">
             <input type="text" name="onderwerp" id="subjectInput" placeholder="Subject...">
-            <input type="file" accept="image/*" name="bestand" id="">
+            <input type="file" accept="image/*" name="file" id="">
             <textarea type="text" name="onmymind" id="mindInput" placeholder="What's on your mind?"></textarea>
-            <button id="uploadThread">Upload</button>
+            <button type="submit" id="uploadThread" name="save">Upload</button>
         </form>
         <div id="chat">
-
+            <?php
+            while ($row = $result->fetch_assoc()) :
+            ?>
+                <div class="threadPost">
+                    <div class="textDiv">
+                        <span class="textTitle">
+                            <h3><?php echo $row['onderwerp']; ?></h3>
+                            <p>By: <?php echo $row['naampje']; ?></p>
+                        </span>
+                        <p class="threadText"><?php echo $row['onmymind']; ?></p>
+                    </div>
+                    <div class="imgDiv">
+                        <img src="<?php echo $row['bestand']; ?>" alt="<?php echo $row['bestand']; ?>">
+                    </div>
+                </div>
+            <?php
+            endwhile;
+            ?>
         </div>
     </div>
 
